@@ -91,6 +91,26 @@ params:
       scale: 0.006
     proposal: 0.003
     latex: \tau_\mathrm{reio}
+  w:
+    prior:
+      min: -3
+      max: -0.01
+    ref:
+      dist: norm
+      loc: -0.99
+      scale: 0.05
+    proposal: 0.05
+    latex: w_{0,\mathrm{DE}}
+  w_growth:
+    prior:
+      min: -3
+      max: -0.01
+    ref:
+      dist: norm
+      loc: -0.99
+      scale: 0.05
+    proposal: 0.05
+    latex: w_\mathrm{growth}
   omegal:
     latex: \Omega_\Lambda
   As_1e9:
@@ -358,7 +378,7 @@ sampler:
     blocking:
       - [1,
           [
-            logA, ns, theta_MC_100, omegabh2, omegach2, tau
+            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w
           ]
         ]
       - [3,
@@ -366,7 +386,7 @@ sampler:
             DES_DZ_S1, DES_DZ_S2, DES_DZ_S3, DES_DZ_S4, DES_A1_1, DES_A1_2,
             DES_A2_1, DES_A2_2, DES_BTA_1,
             DES_B1_1, DES_B1_2, DES_B1_3, DES_B1_4, DES_B1_5,
-            DES_DZ_L1, DES_DZ_L2, DES_DZ_L3, DES_DZ_L4, DES_DZ_L5, omegam_growth
+            DES_DZ_L1, DES_DZ_L2, DES_DZ_L3, DES_DZ_L4, DES_DZ_L5, omegam_growth, w_growth
           ]
         ]
       - [25,

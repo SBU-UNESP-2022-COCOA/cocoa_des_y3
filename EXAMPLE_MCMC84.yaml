@@ -384,15 +384,6 @@ sampler:
             DES_M1, DES_M2, DES_M3, DES_M4, DES_PM1, DES_PM2, DES_PM3, DES_PM4, DES_PM5
           ]
         ]
-      - [50,
-          [
-            A_cib_217, gal545_A_217, calib_217T, galf_TE_A_217, ps_A_100_100,
-            galf_TE_A_100_143, ps_A_217_217, ksz_norm, A_planck, calib_100T,
-            ps_A_143_217, ps_A_143_143, gal545_A_100, galf_TE_A_143_217,
-            gal545_A_143_217, galf_TE_A_100_217, galf_TE_A_143, gal545_A_143,
-            xi_sz_cib, galf_TE_A_100, A_sz
-          ]
-        ]
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
     # Avoid chain getting suck forever
