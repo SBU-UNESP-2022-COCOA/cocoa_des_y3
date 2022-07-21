@@ -61,9 +61,8 @@ params:
     max: 100
   omegabh2:
     prior:
-      dist: norm
-      loc: 0.02208 
-      scale: 0.00052
+      min: 0.01
+      max: 0.04
     ref:
       dist: norm
       loc: 0.022383
