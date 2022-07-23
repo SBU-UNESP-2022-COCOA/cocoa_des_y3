@@ -151,150 +151,152 @@ params:
       scale: 0.01
     proposal: 0.01
     latex: \Omega_\mathrm{m}^\mathrm{growth}
-  DES_DZ_S1:
+# DES-Y3 3x2 nuissance parameter Start
+	DES_DZ_S1:
     prior:
       dist: norm
-      loc: 0.0414632
-      scale: 0.005
+      loc: 0.0
+      scale: 0.018
     ref:
       dist: norm
       loc: 0.0
-      scale: 0.005
+      scale: 0.018
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^1
   DES_DZ_S2:
     prior:
       dist: norm
-      loc: 0.00147332
-      scale: 0.005
+      loc: 0.0
+      scale: 0.015
     ref:
       dist: norm
       loc: 0.0
-      scale: 0.005
+      scale: 0.015
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^2
   DES_DZ_S3:
     prior:
       dist: norm
-      loc: 0.0237035
-      scale: 0.005
+      loc: 0.0
+      scale: 0.011
     ref:
       dist: norm
       loc: 0.0
-      scale: 0.005
+      scale: 0.011
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^3
   DES_DZ_S4:
     prior:
       dist: norm
-      loc: -0.0773436
-      scale: 0.005
+      loc: 0.0
+      scale: 0.017
     ref:
       dist: norm
       loc: 0.0
-      scale: 0.005
+      scale: 0.017
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^4
   DES_M1:
     prior:
       dist: norm
-      loc: 0.0191832
-      scale: 0.005
+      loc: -0.006
+      scale: 0.009
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
-    proposal: 0.005
+      loc: -0.006
+      scale: 0.009
+    proposal: 0.004
     latex: m_\mathrm{DES}^1
   DES_M2:
     prior:
       dist: norm
-      loc: -0.0431752
-      scale: 0.005
+      loc: -0.02
+      scale: 0.008
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
-    proposal: 0.005
+      loc: -0.02
+      scale: 0.008
+    proposal: 0.004
     latex: m_\mathrm{DES}^2
   DES_M3:
     prior:
       dist: norm
-      loc: -0.034961
-      scale: 0.005
+      loc: -0.024
+      scale: 0.008
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
-    proposal: 0.005
+      loc: -0.024
+      scale: 0.008
+    proposal: 0.004
     latex: m_\mathrm{DES}^3
   DES_M4:
     prior:
       dist: norm
-      loc: -0.0158096
-      scale: 0.005
+      loc: -0.037
+      scale: 0.008
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
-    proposal: 0.005
+      loc: -0.037
+      scale: -0.008
+    proposal: 0.003
     latex: m_\mathrm{DES}^4
  # Lensing photo-z errors
   DES_DZ_L1:
     prior:
       dist: norm
-      loc: 0.001288
+      loc: 0.006
       scale: 0.004
     ref:
       dist: norm
-      loc: 0.0
+      loc: 0.006
       scale: 0.004
-    proposal: 0.004
+    proposal: 0.002
     latex: \Delta z_\mathrm{l,DES}^1
   DES_DZ_L2:
     prior:
       dist: norm
-      loc: -0.00466655
+      loc: 0.001
       scale: 0.003
     ref:
       dist: norm
-      loc: 0.0
+      loc: 0.0001
       scale: 0.003
-    proposal: 0.003
+    proposal: 0.001
     latex: \Delta z_\mathrm{l,DES}^2
   DES_DZ_L3:
     prior:
       dist: norm
-      loc: 0.00409565
+      loc: 0.004
       scale: 0.003
     ref:
       dist: norm
-      loc: 0.0
+      loc: 0.0004
       scale: 0.003
-    proposal: 0.003
+    proposal: 0.001
     latex: \Delta z_\mathrm{l,DES}^3
   DES_DZ_L4:
     prior:
       dist: norm
-      loc: 0.00162103
+      loc: -0.002
       scale: 0.005
-    ref:
+    ref:asdasd
       dist: norm
-      loc: 0.0
+      loc: -0.002
       scale: 0.005
-    proposal: 0.005
+    proposal: 0.002
     latex: \Delta z_\mathrm{l,DES}^4
   DES_DZ_L5:
     prior:
       dist: norm
-      loc: -0.0075703
-      scale: 0.011
+      loc: -0.007
+      scale: 0.01
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.011
-    proposal: 0.011
+      loc: -0.007
+      scale: 0.01
+    proposal: 0.005
     latex: \Delta z_\mathrm{l,DES}^5
+# DES-Y3 3x2 nuissance parameter End
     
 theory:
   camb:

@@ -138,103 +138,105 @@ params:
       scale: 0.01
     proposal: 0.01
     latex: \Omega_\mathrm{m}^\mathrm{growth}
-  DES_DZ_S1:
-    prior:
+# DES-Y1 cosmic shear nuissance parameter Start
+	DES_DZ_S1:
+		prior:
       dist: norm
-      loc: 0.0414632
-      scale: 0.005
+      loc: -0.001
+      scale: 0.016
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
+      loc: -0.001
+      scale: 0.016
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^1
   DES_DZ_S2:
     prior:
       dist: norm
-      loc: 0.00147332
-      scale: 0.005
+      loc: -0.019
+      scale: 0.013
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
+      loc: -0.019
+      scale: 0.013
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^2
   DES_DZ_S3:
     prior:
       dist: norm
-      loc: 0.0237035
-      scale: 0.005
+      loc: 0.009
+      scale: 0.011
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
+      loc: 0.009
+      scale: 0.011
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^3
   DES_DZ_S4:
     prior:
       dist: norm
-      loc: -0.0773436
-      scale: 0.005
+      loc: -0.018
+      scale: 0.022
     ref:
       dist: norm
       loc: 0.0
-      scale: 0.005
-    proposal: 0.005
+      scale: -0.018
+    proposal: 0.022
     latex: \Delta z_\mathrm{s,DES}^4
   DES_M1:
     prior:
       dist: norm
-      loc: 0.0191832
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     proposal: 0.005
     latex: m_\mathrm{DES}^1
   DES_M2:
     prior:
       dist: norm
-      loc: -0.0431752
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     proposal: 0.005
     latex: m_\mathrm{DES}^2
   DES_M3:
     prior:
       dist: norm
-      loc: -0.034961
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     proposal: 0.005
     latex: m_\mathrm{DES}^3
   DES_M4:
     prior:
       dist: norm
-      loc: -0.0158096
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     ref:
       dist: norm
-      loc: 0.0
-      scale: 0.005
+      loc: 0.012
+      scale: 0.023
     proposal: 0.005
     latex: m_\mathrm{DES}^4
-  DES_A2_1:
+  DES_A2_1: #TATT, not used for Y1
     value: -1.7938938475734911 
-    latex: A_\mathrm{2-IA,DES}^1
-  DES_A2_2:
+    latex: A_\mathrm{2-IA,DES}^1 
+  DES_A2_2: #TATT, not used for Y1
     value: -1.5448080290038528
     latex: A_\mathrm{2-IA,DES}^2
-  DES_BTA_1:
+  DES_BTA_1: #TATT, not used for Y1
     value: 0.8154011496506723
     latex: A_\mathrm{BTA-IA,DES}^1
+# DES-Y1 cosmic shear nuissance parameter End
     
 theory:
   camb:
