@@ -179,9 +179,9 @@ params:
       scale: 0.022
     ref:
       dist: norm
-      loc: 0.0
-      scale: -0.018
-    proposal: 0.022
+      loc: -0.018
+      scale: 0.022
+    proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^4
   DES_M1:
     prior:
