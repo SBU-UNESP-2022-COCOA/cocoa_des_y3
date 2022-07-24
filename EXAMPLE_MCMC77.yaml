@@ -251,13 +251,13 @@ params:
     proposal: 0.005
     latex: m_\mathrm{DES}^4
   DES_A2_1: #TATT, not used for Y1
-    value: -1.7938938475734911 
+    value: 0.0
     latex: A_\mathrm{2-IA,DES}^1 
   DES_A2_2: #TATT, not used for Y1
-    value: -1.5448080290038528
+    value: 0.0
     latex: A_\mathrm{2-IA,DES}^2
   DES_BTA_1: #TATT, not used for Y1
-    value: 0.8154011496506723
+    value: 1.0
     latex: A_\mathrm{BTA-IA,DES}^1
  # Lensing photo-z errors
   DES_DZ_L1:
@@ -316,19 +316,19 @@ params:
     proposal: 0.005
     latex: \Delta z_\mathrm{l,DES}^5
   DES_PM1:
-    value: -1.05465
+    value: 0.0
     latex: PM_\mathrm{DES}^1
   DES_PM2:
-    value: 0.47537
+    value: 0.0
     latex: PM_\mathrm{DES}^2
   DES_PM3:
-    value: 0.000378694
+    value: 0.0
     latex: PM_\mathrm{DES}^3
   DES_PM4:
-    value: 0.558129
+    value: 0.0
     latex: PM_\mathrm{DES}^4
   DES_PM5:
-    value: -0.531747
+    value: 0.0
     latex: PM_\mathrm{DES}^5
 # DES-Y1 3x2 nuissance parameter End
     

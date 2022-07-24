@@ -289,7 +289,7 @@ params:
       dist: norm
       loc: -0.002
       scale: 0.005
-    ref:asdasd
+    ref:
       dist: norm
       loc: -0.002
       scale: 0.005
@@ -306,6 +306,21 @@ params:
       scale: 0.01
     proposal: 0.005
     latex: \Delta z_\mathrm{l,DES}^5
+  DES_PM1:
+    value: 0.0
+    latex: PM_\mathrm{DES}^1
+  DES_PM2:
+    value: 0.0
+    latex: PM_\mathrm{DES}^2
+  DES_PM3:
+    value: 0.0
+    latex: PM_\mathrm{DES}^3
+  DES_PM4:
+    value: 0.0
+    latex: PM_\mathrm{DES}^4
+  DES_PM5:
+    value: 0.0
+    latex: PM_\mathrm{DES}^5
 # DES-Y3 3x2 nuissance parameter End
     
 theory:
