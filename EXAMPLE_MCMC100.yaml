@@ -318,20 +318,35 @@ params:
     proposal: 0.005
     latex: \Delta z_\mathrm{l,DES}^5
   DES_PM1:
-    value: -1.05465
+    value: 0.0
     latex: PM_\mathrm{DES}^1
   DES_PM2:
-    value: 0.47537
+    value: 0.0
     latex: PM_\mathrm{DES}^2
   DES_PM3:
-    value: 0.000378694
+    value: 0.0
     latex: PM_\mathrm{DES}^3
   DES_PM4:
-    value: 0.558129
+    value: 0.0
     latex: PM_\mathrm{DES}^4
   DES_PM5:
-    value: -0.531747
+    value: 0.0
     latex: PM_\mathrm{DES}^5
+  DES_BMAG_1:
+    value: 1.0
+    latex: b_\mathrm{BMAG-DES}^1
+  DES_BMAG_2:
+    value: 1.0
+    latex: b_\mathrm{BMAG-DES}^2
+  DES_BMAG_3:
+    value: 1.0
+    latex: b_\mathrm{BMAG-DES}^3
+  DES_BMAG_4:
+    value: 1.0
+    latex: b_\mathrm{BMAG-DES}^4
+  DES_BMAG_5:
+    value: 1.0
+    latex: b_\mathrm{BMAG-DES}^5
 # DES-Y1 3x2 nuissance parameter End
 
 theory:
