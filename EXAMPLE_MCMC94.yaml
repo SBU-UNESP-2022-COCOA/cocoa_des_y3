@@ -153,8 +153,8 @@ params:
     proposal: 0.01
     latex: \Omega_\mathrm{m}^\mathrm{growth}
 # DES-Y1 cosmic shear nuissance parameter Start
-	DES_DZ_S1:
-		prior:
+  DES_DZ_S1:
+    prior:
       dist: norm
       loc: -0.001
       scale: 0.016
