@@ -1,4 +1,4 @@
-data_file = des_y3_theory_3x2pt.modelvector
+data_file = Y3_unblinded_final.txt
 cov_file = cov_unblinded_final.txt
 mask_file = 3x2pt_baseline.mask
 nz_lens_file = nz_lens_Y3_unblinded_final.txt
