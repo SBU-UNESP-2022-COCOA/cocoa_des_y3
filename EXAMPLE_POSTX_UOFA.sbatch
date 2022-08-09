@@ -4,8 +4,9 @@
 #SBATCH --output=DY3-%A_%a.out
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=12
-#SBATCH --time=50:00:00
+#SBATCH --ntasks-per-socket=1
+#SBATCH --cpus-per-task=25
+#SBATCH --time=12:00:00
 #SBATCH --partition=high_priority
 #SBATCH --qos=user_qos_timeifler
 #SBATCH --account=timeifler
@@ -29,10 +30,6 @@ source start_cocoa
 echo Cocoa Conda environment Activated
 
 export OMP_PROC_BIND=close
-if [ -n "$SLURM_CPUS_PER_TASK" ]; then
-  export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK-2
-else
-  export OMP_NUM_THREADS=1
-fi
+export OMP_NUM_THREADS=9
 
-mpirun -n ${SLURM_NTASKS} --oversubscribe --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/des_y3/EXAMPLE_POST${SLURM_ARRAY_TASK_ID}.yaml
+mpirun -n 1 --oversubscribe --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/des_y3/EXAMPLE_POST${SLURM_ARRAY_TASK_ID}.yaml -f

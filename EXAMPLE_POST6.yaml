@@ -6,6 +6,8 @@ output: ./projects/des_y3/chains/EXAMPLE_MCMC6
 
 post:
   suffix: POST
+  skip: 0.5
+  thin: 41
   remove:
     prior:
       SZ: "lambda ksz_norm, A_sz: stats.norm.logpdf(ksz_norm+1.6*A_sz, loc=9.5, scale=3.0)"

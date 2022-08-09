@@ -6,6 +6,8 @@ output: ./projects/des_y3/chains/EXAMPLE_MCMC20
 
 post:
   suffix: POST
+  skip: 0.5
+  thin: 61
   remove:
     # TEST NO CMB PRIORS
     likelihood:
