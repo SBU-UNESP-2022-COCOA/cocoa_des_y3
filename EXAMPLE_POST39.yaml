@@ -7,7 +7,7 @@ output: ./projects/des_y3/chains/EXAMPLE_MCMC39
 post:
   suffix: POST
   skip: 0.5
-  thin: 41.8774
+  thin: 41
   remove:
     likelihood:
       sn.pantheon:

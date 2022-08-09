@@ -23,7 +23,6 @@ post:
         print_datavector: False
         non_linear_emul: 1
         kmax_boltzmann: 2.0
-
   add:
     likelihood:
       planck_2018_highl_plik.TTTEEE:
