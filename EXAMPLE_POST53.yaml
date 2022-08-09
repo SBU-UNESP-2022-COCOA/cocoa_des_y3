@@ -18,13 +18,12 @@ post:
         path: ./external_modules/data/
       bao.sdss_dr12_consensus_bao:
         path: ./external_modules/data/
-      des_y3.des_xi_ggl:
+      des_y3.des_xi_gg:
         path: ./external_modules/data/des_y3
         data_file: DES_Y3.dataset
         print_datavector: False
         non_linear_emul: 1
         kmax_boltzmann: 2.0
-
   add:
     likelihood:
       sn.pantheon:
@@ -35,7 +34,7 @@ post:
         path: ./external_modules/data/
       bao.sdss_dr12_consensus_bao:
         path: ./external_modules/data/
-      des_y3.des_xi_ggl:
+      des_y3.des_xi_gg:
         path: ./external_modules/data/des_y3
         data_file: DES_Y3.dataset
         print_datavector: False

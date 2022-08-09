@@ -19,7 +19,7 @@ post:
         path: ./external_modules/
       des_y3.des_3x2pt:
         path: ./external_modules/data/des_y3
-        data_file: DES_Y1.dataset
+        data_file: DES_Y3.dataset
         print_datavector: False
         non_linear_emul: 1
         kmax_boltzmann: 2.0
@@ -40,7 +40,7 @@ post:
         path: ./external_modules/
       des_y3.des_3x2pt:
         path: ./external_modules/data/des_y3
-        data_file: DES_Y1.dataset
+        data_file: DES_Y3.dataset
         print_datavector: False
         non_linear_emul: 1
         kmax_boltzmann: 2.0
