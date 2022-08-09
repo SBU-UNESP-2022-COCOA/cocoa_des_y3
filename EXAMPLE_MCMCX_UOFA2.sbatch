@@ -5,15 +5,11 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
 #SBATCH --ntasks-per-socket=2
-#SBATCH --cpus-per-task=5
-#SBATCH --time=72:00:00
-#SBATCH --partition=standard
-#SBATCH --qos=qual_qos_timeifler
+#SBATCH --cpus-per-task=10
+#SBATCH --time=120:00:00
+#SBATCH --partition=high_priority
+#SBATCH --qos=user_qos_timeifler
 #SBATCH --account=timeifler
-
-## --- SBATCH --partition=high_priority
-## --- SBATCH --qos=user_qos_timeifler
-## --- SBATCH --account=timeifler
 
 # Clear the environment from any previously loaded modules
 module purge > /dev/null 2>&1

@@ -404,7 +404,7 @@ sampler:
     blocking:
       - [1,
           [
-            logA, ns, theta_MC_100, omegabh2, omegach2, tau
+            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w
           ]
         ]
       - [3,

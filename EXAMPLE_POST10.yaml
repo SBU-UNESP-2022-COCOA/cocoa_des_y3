@@ -1,0 +1,49 @@
+timing: True
+debug: False
+stop_at_error: False
+
+output: ./projects/des_y3/chains/EXAMPLE_MCMC10
+
+post:
+  suffix: POST
+  remove:
+    theory:
+      camb:
+        path: ./external_modules/code/CAMB
+        use_renames: True
+        extra_args:
+          halofit_version: takahashi
+          AccuracyBoost: 1.05
+          lens_potential_accuracy: 1.05
+          num_massive_neutrinos: 1
+          nnu: 3.046
+          dark_energy_model: ppf
+          accurate_massive_neutrino_transfers: false
+          k_per_logint: 20
+    likelihood:
+      des_y3.des_cosmic_shear:
+        path: ./external_modules/data/des_y3
+        data_file: DES_Y1.dataset
+        print_datavector: False
+        non_linear_emul: 2
+        kmax_boltzmann: 2.0
+  add:
+    camb:
+      path: ./external_modules/code/CAMB
+      use_renames: True
+      extra_args:
+        halofit_version: takahashi
+        AccuracyBoost: 1.05
+        lens_potential_accuracy: 1.05
+        num_massive_neutrinos: 1
+        nnu: 3.046
+        dark_energy_model: ppf
+        accurate_massive_neutrino_transfers: false
+        k_per_logint: 20
+    likelihood:
+      des_y3.des_cosmic_shear:
+        path: ./external_modules/data/des_y3
+        data_file: DES_Y1.dataset
+        print_datavector: False
+        non_linear_emul: 2
+        kmax_boltzmann: 2.0

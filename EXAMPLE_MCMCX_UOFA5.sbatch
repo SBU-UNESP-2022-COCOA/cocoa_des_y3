@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --job-name=DESY3_MC5
+#SBATCH --job-name=DESY3_MC1
 #SBATCH --output=DY3-%A_%a.out
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
 #SBATCH --ntasks-per-socket=2
-#SBATCH --cpus-per-task=5
-#SBATCH --time=72:00:00
+#SBATCH --cpus-per-task=4
+#SBATCH --time=120:00:00
 #SBATCH --partition=high_priority
 #SBATCH --qos=user_qos_timeifler
 #SBATCH --account=timeifler

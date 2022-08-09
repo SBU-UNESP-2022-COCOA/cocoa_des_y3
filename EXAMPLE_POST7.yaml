@@ -1,0 +1,59 @@
+timing: True
+debug: False
+stop_at_error: False
+
+output: ./projects/des_y3/chains/EXAMPLE_MCMC7
+
+post:
+  suffix: POST
+  remove:
+    theory:
+      camb:
+        path: ./external_modules/code/CAMB
+        use_renames: True
+        extra_args:
+          halofit_version: takahashi
+          AccuracyBoost: 1.05
+          lens_potential_accuracy: 1.05
+          num_massive_neutrinos: 1
+          nnu: 3.046
+          dark_energy_model: ppf
+          accurate_massive_neutrino_transfers: false
+          k_per_logint: 20
+    likelihood:
+      planck_2018_highl_plik.TTTEEE:
+        path: ./external_modules/
+        clik_file: plc_3.0/hi_l/plik/plik_rd12_HM_v22b_TTTEEE_33_396.clik
+      planck_2018_lowl.EE:
+        path: ./external_modules/
+      des_y3.des_cosmic_shear:
+        path: ./external_modules/data/des_y3
+        data_file: DES_Y3.dataset
+        print_datavector: False
+        non_linear_emul: 1
+        kmax_boltzmann: 2.0
+  add:
+    camb:
+      path: ./external_modules/code/CAMB
+      use_renames: True
+      extra_args:
+        halofit_version: takahashi
+        AccuracyBoost: 1.05
+        lens_potential_accuracy: 1.05
+        num_massive_neutrinos: 1
+        nnu: 3.046
+        dark_energy_model: ppf
+        accurate_massive_neutrino_transfers: false
+        k_per_logint: 20
+    likelihood:
+      planck_2018_highl_plik.TTTEEE:
+        path: ./external_modules/
+        clik_file: plc_3.0/hi_l/plik/plik_rd12_HM_v22b_TTTEEE_33_396.clik
+      planck_2018_lowl.EE:
+        path: ./external_modules/
+      des_y3.des_cosmic_shear:
+        path: ./external_modules/data/des_y3
+        data_file: DES_Y3.dataset
+        print_datavector: False
+        non_linear_emul: 1
+        kmax_boltzmann: 2.0
