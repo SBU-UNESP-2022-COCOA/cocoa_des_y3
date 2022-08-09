@@ -7,19 +7,6 @@ output: ./projects/des_y3/chains/EXAMPLE_MCMC16
 post:
   suffix: POST
   remove:
-    theory:
-      camb:
-        path: ./external_modules/code/CAMB
-        use_renames: True
-        extra_args:
-          halofit_version: takahashi
-          AccuracyBoost: 1.05
-          lens_potential_accuracy: 1.05
-          num_massive_neutrinos: 1
-          nnu: 3.046
-          dark_energy_model: ppf
-          accurate_massive_neutrino_transfers: false
-          k_per_logint: 20
     likelihood:
       sn.pantheon:
         path: ./external_modules/data/sn_data
@@ -36,18 +23,6 @@ post:
         non_linear_emul: 1
         kmax_boltzmann: 2.0
   add:
-    camb:
-      path: ./external_modules/code/CAMB
-      use_renames: True
-      extra_args:
-        halofit_version: takahashi
-        AccuracyBoost: 1.05
-        lens_potential_accuracy: 1.05
-        num_massive_neutrinos: 1
-        nnu: 3.046
-        dark_energy_model: ppf
-        accurate_massive_neutrino_transfers: false
-        k_per_logint: 20
     likelihood:
       sn.pantheon:
         path: ./external_modules/data/sn_data
