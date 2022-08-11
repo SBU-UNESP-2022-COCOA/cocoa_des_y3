@@ -30,6 +30,6 @@ source start_cocoa
 echo Cocoa Conda environment Activated
 
 export OMP_PROC_BIND=close
-export OMP_NUM_THREADS=9
+export OMP_NUM_THREADS=5
 
 mpirun -n 1 --oversubscribe --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/des_y3/EXAMPLE_POST${SLURM_ARRAY_TASK_ID}.yaml -f
