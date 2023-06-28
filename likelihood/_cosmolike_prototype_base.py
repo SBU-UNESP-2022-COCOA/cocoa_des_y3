@@ -131,7 +131,7 @@ class _cosmolike_prototype_base(DataSetLikelihood):
 
     ci.initial_setup()
     ci.init_accuracy_boost(self.accuracyboost, self.samplingboost, self.integration_accuracy)
-    
+
     ci.init_probes(possible_probes=self.probe)
 
     ci.init_binning(self.ntheta, self.theta_min_arcmin, self.theta_max_arcmin)
